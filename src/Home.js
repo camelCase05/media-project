@@ -14,7 +14,6 @@ const Home = () => {
 
             .then(data => {
                 setProfiles(data);
-                console.log(profiles);
             })
     }, [])
 

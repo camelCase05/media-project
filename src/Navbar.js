@@ -1,9 +1,22 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
 
     const [name, setName] = useState("User");
+
+    useEffect(() =>{
+
+        fetch("http://localhost:8000/personName")
+
+            .then(res => {
+                return res.json();
+            }) 
+
+            .then(data => {
+                setName(data.personName);
+            })
+    }, [])
 
     return (
         <div className="navbar">

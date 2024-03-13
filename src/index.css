@@ -136,12 +136,31 @@ body{
   padding: 20px;
 }
 
+.claim .nameChange{
+  text-align: left;
+  display: block;
+  background-color: #023E8A;
+  color: #90E0EF;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.claim form{
+  border: 4px solid #0077B6;
+  margin-bottom: 20px;
+}
+
+.claim h2{
+  margin: 0px 0px 10px 0px;
+}
+
 .claim label{
   display: block;
+  margin-left: 10px;
 }
 
 .claim input{
-  margin: 0px 0px 5px 0px;
+  margin: 0px 0px 5px 10px;
   padding: 3px 7px;
   border-radius: 10px;
   font-family: "Nunito", sans-serif;
@@ -149,7 +168,7 @@ body{
 }
 
 .claim select{
-  margin: 0px 0px 5px 0px;
+  margin: 0px 0px 5px 3px;
   padding: 3px 7px;
   border-radius: 10px;
   font-family: "Nunito", sans-serif;
@@ -159,6 +178,7 @@ body{
 .claim button{
   display: block;
   margin-top: 10px;
+  margin-left: 10px;
   background-color: #90E0EF;
   border: 2px solid #0077B6;
   color: #0077B6;

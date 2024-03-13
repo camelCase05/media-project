@@ -12,7 +12,22 @@ const Claim = () => {
     const [viewerMen, setViewerMen] = useState(null);
     const [viewerWomen, setViewerWomen] = useState(null);
 
+    const [name, setName] = useState("User");
+
     const history = useHistory();
+
+    const changeName = (e) => {
+        e.preventDefault();
+
+        fetch("http://localhost:8000/personName", {
+            method: "PUT",
+            headers: {"Content-Type": "application/json"},
+            body: JSON.stringify({"personName": name})
+        })
+            .then(() => {
+                history.push("/");
+            })
+    }
 
     const addProfile = (e) => {
         e.preventDefault();
@@ -40,7 +55,22 @@ const Claim = () => {
 
     return (
         <div className="claim">
+
+            <form className="nameChange" onSubmit={changeName}>
+                <h2>Change Name Form</h2>
+
+                <label>Enter Name: </label>
+                <input 
+                type="text" 
+                placeholder="Enter new name..."
+                onChange={(e) => {setName(e.target.value)}}
+                />
+                <button>Change Name</button>
+            </form>
+            
             <form className="profileForm" onSubmit={addProfile}>
+                <h2>Add Platform Form</h2>
+
                 <label>Profile Platform: </label>
                 <input
                 placeholder="Enter profile platform..."

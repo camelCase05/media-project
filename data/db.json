@@ -1,5 +1,7 @@
 {
-  "person-name": "Steve",
+  "personName": {
+    "personName": "User"
+  },
   "profiles": [
     {
       "platform": "Instagram",
@@ -22,28 +24,6 @@
       "viewerMen": 67,
       "viewerWomen": 33,
       "id": 2
-    },
-    {
-      "id": "8a64",
-      "platform": "YouTube",
-      "followers": "100",
-      "followersOption": "K",
-      "views": "1",
-      "viewsOption": "M",
-      "engagementRate": "45",
-      "viewerMen": "60",
-      "viewerWomen": "40"
-    },
-    {
-      "id": "933f",
-      "platform": "Twitter",
-      "followers": "2",
-      "followersOption": "K",
-      "views": "20",
-      "viewsOption": "K",
-      "engagementRate": "40",
-      "viewerMen": "80",
-      "viewerWomen": "20"
     }
   ]
 }
