@@ -1,5 +1,5 @@
-Run Code by doing these comands in order in their own terminal:
-npx json-server --watch data/db.json --port 8000
+## Run Code by doing these comands in order in their own terminal:
+npx json-server --watch data/db.json --port 8000\
 npm start
 
 # Getting Started with Create React App
