@@ -1,0 +1,174 @@
+/* <uniquifier>: Use a unique and descriptive class name
+<weight>: Use a value from 200 to 1000 */
+
+/*
+dark blue #023E8A, 
+medium blue #0077B6, 
+light blue #90E0EF, 
+pale blue #CAF0F8
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root{
+  --men: 10;
+  --women: 20;
+}
+
+body{
+  background-color: #CAF0F8;
+}
+
+.App{
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.navbar{
+  max-width: 1000px;
+  position: sticky;
+  top: 0px;
+  z-index: 100;
+  background: linear-gradient(transparent, #CAF0F8, transparent);
+  backdrop-filter: blur(3px);
+  margin: 0px auto;
+}
+
+.navbar .cont{
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  margin: 0px auto;
+  border-bottom: 2px solid #0077B6;
+  padding: 0px 60px;
+}
+
+.navbar h1{
+  font-weight: 900;
+  color: #0077B6;
+}
+
+.navbar .links{
+  margin-left: auto;
+}
+
+.navbar a{
+  font-weight: 400;
+  margin-left: 20px;
+  padding: 3px 7px;
+  text-decoration: none;
+  color: #0077B6;
+  background-color: #90E0EF;
+
+  border: 2px solid #0077B6;
+  border-radius: 8px;
+}
+
+.navbar a:hover{
+  box-shadow: 2px 2px 4px 0 #023E8A;
+}
+
+.pie{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: conic-gradient(
+    #90E0EF 0% calc(var(--men)*1%),
+    #0077B6 calc(var(--men)*1%) calc((var(--men)*1%) + (var(--women)*1%)),
+    white calc((var(--men)*1%) + (var(--women)*1%)) 100%
+  );
+  display: flex;
+  align-items: center;
+}
+
+.pie-key{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background:#023E8A;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile{
+  margin: 60px auto;
+  background-color: #023E8A;
+  max-width: 600px;
+  border-radius: 50px;
+  color: #90E0EF;
+  font-weight: 600;
+}
+
+.profile h2{
+  padding: 20px 25px 0px 25px;
+}
+
+.profile .sections{
+  padding: 0px 30px;
+}
+
+.pie{
+  position: relative;
+  left: 450px;
+  bottom: 230px;
+}
+
+.claim{
+  max-width: 600px;
+  margin: 20px auto;
+  text-align: center;
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.claim .profileForm{
+  text-align: left;
+  display: block;
+  background-color: #023E8A;
+  color: #90E0EF;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.claim label{
+  display: block;
+}
+
+.claim input{
+  margin: 0px 0px 5px 0px;
+  padding: 3px 7px;
+  border-radius: 10px;
+  font-family: "Nunito", sans-serif;
+  font-size: 15px;
+}
+
+.claim select{
+  margin: 0px 0px 5px 0px;
+  padding: 3px 7px;
+  border-radius: 10px;
+  font-family: "Nunito", sans-serif;
+  font-size: 15px;
+}
+
+.claim button{
+  display: block;
+  margin-top: 10px;
+  background-color: #90E0EF;
+  border: 2px solid #0077B6;
+  color: #0077B6;
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 4px 8px;
+  border-radius: 8px;
+}
+
+.claim button:hover{
+  box-shadow: 2px 2px 4px 0 #90E0EF;
+}

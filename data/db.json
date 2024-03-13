@@ -1,0 +1,49 @@
+{
+  "person-name": "Steve",
+  "profiles": [
+    {
+      "platform": "Instagram",
+      "followers": 1.2,
+      "followersOption": "M",
+      "views": 503,
+      "viewsOption": "K",
+      "engagementRate": 37,
+      "viewerMen": 35,
+      "viewerWomen": 65,
+      "id": 1
+    },
+    {
+      "platform": "Tik Tok",
+      "followers": 3,
+      "followersOption": "M",
+      "views": 900,
+      "viewsOption": "K",
+      "engagementRate": 43,
+      "viewerMen": 67,
+      "viewerWomen": 33,
+      "id": 2
+    },
+    {
+      "id": "8a64",
+      "platform": "YouTube",
+      "followers": "100",
+      "followersOption": "K",
+      "views": "1",
+      "viewsOption": "M",
+      "engagementRate": "45",
+      "viewerMen": "60",
+      "viewerWomen": "40"
+    },
+    {
+      "id": "933f",
+      "platform": "Twitter",
+      "followers": "2",
+      "followersOption": "K",
+      "views": "20",
+      "viewsOption": "K",
+      "engagementRate": "40",
+      "viewerMen": "80",
+      "viewerWomen": "20"
+    }
+  ]
+}
